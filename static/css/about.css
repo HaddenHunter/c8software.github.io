@@ -1,0 +1,99 @@
+.intro-panel {
+  display: flex;
+  padding: 50px 0 100px;
+}
+
+.intro-panel .panel-left {
+  color: #0074FF;
+  font-size: 16px;
+  width: 200px;
+  padding-top: 100px;
+}
+
+.intro-panel .left-line {
+  width: 1px;
+  height: 439px;
+  background: #4F4F4F;
+  position: relative;
+}
+
+.intro-panel .left-line::before {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #0073FC;
+  border-radius: 50%;
+  top: -12px;
+  left: -6px;
+}
+
+.intro-panel .left-line::after {
+  content: " ";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #0073FC;
+  border-radius: 50%;
+  bottom: -12px;
+  left: -6px;
+}
+
+.intro-panel .left-title {
+  padding-left: 20px;
+  width: 100px;
+}
+
+.about-infos {
+  flex: 1;
+  padding: 30px 0px;
+  color: #1F1F1F;
+  font-size: 14px;
+}
+
+.about-infos img {
+  margin-right: 10px;
+}
+
+.project-data {
+  position: relative;
+  margin: 30px 0;
+}
+
+.project-data .data-view {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.project-data .data-view .stat-data {
+  font-size: 35px;
+  font-weight: bold;
+  width: 124px;
+  height: 124px;
+  line-height: 124px;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+.project-data .data-view .stat-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 43px;
+}
+
+@media screen and (max-width: 736px) {
+  .intro-panel {
+    padding: 20px 15px 40px;
+  }
+
+  .intro-panel .left-line{
+    height: 700px;
+  }
+}

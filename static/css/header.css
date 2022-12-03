@@ -1,0 +1,48 @@
+.logo-text {
+  font-size: 21px;
+  font-weight: 500;
+  color: #676767;
+}
+
+.hg_logo img {
+  height: 27px;
+  margin-right: 20px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #0E0E0E;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #fff;
+  line-height: 80px;
+}
+
+
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  margin-top: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.93);
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  background: none;
+  border-bottom: 2px solid #1e9fff;
+}
+
+@media screen and (max-width: 736px) {
+  .hg_logo img {
+    padding-left: 20px;
+  }
+}

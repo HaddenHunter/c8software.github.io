@@ -1,0 +1,274 @@
+.skill-item {
+  text-align: center;
+  font-size: 14px;
+}
+
+.skill-item img {
+  height: 54px;
+  margin-bottom: 10px;
+}
+
+.project-item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 8px;
+  /* padding: 20px; */
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.skill-list {
+  padding: 60px 0 80px;
+}
+
+@media screen and (max-width: 736px) {
+  .skill-list {
+    padding: 40px 20px;
+  }
+
+  .skill-item {
+    font-size: 12px;
+  }
+
+  .skill-item img {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .project-item img {
+    height: 124px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .project-item img {
+    height: 138px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .project-item img {
+    height: 183px;
+  }
+}
+
+@media screen and (min-width:1600px) {
+  .project-item img {
+    height: 220px;
+  }
+}
+
+.partner-list {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partner-list img {
+  width: calc(100% / 6);
+  height: 100px;
+  padding: 20px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 736px) {
+  .partner-list img {
+    padding: 10px;
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (min-width: 736px) {
+  .partner-list img {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (min-width:992px) {
+  .partner-list img {
+    width: calc(100% / 5);
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .partner-list img {
+    width: calc(100% / 6);
+  }
+}
+
+@media screen and (min-width:1600px) {
+  .partner-list img {
+    width: calc(100% / 6);
+  }
+}
+
+
+.project-item .project-title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+
+.project-item .project-intro {
+  font-weight: 400;
+  font-size: 14px;
+  height: 40px;
+}
+
+.project-item .project-more {
+  color: #0074FF;
+  font-size: 14px;
+}
+
+.cf-panel-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0B0B0B;
+  margin: 40px 0 20px;
+}
+
+.project-list {
+  padding: 0 0 80px;
+}
+
+@media screen and (max-width: 736px) {
+  .project-list {
+    padding: 0 15px 30px;
+  }
+
+  .project-item {
+    margin-bottom: 30px;
+  }
+
+  .project-item .project-title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+}
+
+.fa-title-view {
+  text-align: center;
+  margin: 40px 0 0px;
+  color: #666;
+}
+
+.fa-title-view .title-t {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.fa-title-view .title-t::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 20px);
+  background-color: #2275EB;
+  width: 40px;
+  height: 4px;
+}
+
+.fa-view {
+  position: relative;
+  color: #2275EB;
+}
+
+.fa-view .fa-wrapper {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  padding: 0 40px;
+}
+
+.fa-view .fa-wrapper.fa-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  text-align: right;
+}
+
+.fa-view .fa-title {
+  font-size: 36px;
+}
+
+.fa-view .fa-content {
+  margin-top: 30px;
+  width: 400px;
+}
+
+.fa-view .fa-content p {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.fa-view .read-more {
+  margin-top: 60px;
+  font-size: 16px;
+  border: 2px solid #2275EB;
+  width: 160px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .fa-view .fa-wrapper {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .fa-view .fa-wrapper {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .fa-title-view {
+    font-size: 14px;
+  }
+
+  .fa-title-view .title-t {
+    font-size: 20px;
+  }
+
+  .fa-view .fa-wrapper {
+    top: 20px;
+    padding: 0 15px;
+  }
+
+  .fa-view .fa-title {
+    font-size: 18px;
+  }
+
+  .fa-view .fa-content {
+    margin-top: 10px;
+    width: 180px;
+  }
+
+  .fa-view .fa-content p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+  }
+
+  .fa-view .read-more {
+    margin-top: 20px;
+    font-size: 12px;
+    border: 2px solid #2275EB;
+    width: 100px;
+    height: 30px;
+    line-height: 26px;
+    border-radius: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,508 @@
+.row.row-no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.row-no-gutters > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/*单行文本溢出省略号*/
+.one-t {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all linear 0.2s;
+}
+
+/*多行文本溢出省略号*/
+.more-t {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: all linear 0.2s;
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+.banner-wrapper .banner-image {
+  width: 100%;
+}
+
+.banner-wrapper .tab-menus {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 42px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner-wrapper .tab-menus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 0;
+}
+
+.banner-wrapper .tab-menus li.tab-menu-item {
+  display: inline-block;
+  width: 20%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.banner-wrapper .tab-menus li.tab-menu-item-active {
+  background: #00a3e9;
+}
+
+.banner-wrapper .tab-menus a {
+  display: block;
+  color: #FFFFFF;
+}
+
+.banner-wrapper .banner-name {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: #FFFFFF;
+  transform: translateY(-50%);
+}
+
+.banner-wrapper .banner-name .banner-name-cn {
+  letter-spacing: 30px;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.content-title {
+  font-size: 32px;
+  color: #15499a;
+  letter-spacing: 4px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* 2 */
+.article-title {
+  font-size: 24px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.article-title.blue {
+  color: #15499a;
+}
+
+.article-content {
+  font-size: 16px;
+  /* text-indent: 32px; */
+}
+
+.intro-video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* 3 */
+.light-bg {
+  background: #eaf6fd;
+}
+
+/* 5 */
+
+.search-wrapper {
+  width: 100%;
+  background: linear-gradient(90deg, #d3edfb, transparent);
+  padding: 8px 20px 4px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+.search-wrapper div {
+  margin-bottom: 4px;
+}
+
+.search-wrapper .field {
+  margin: 0 10px 4px;
+}
+
+.search-wrapper .field input {
+  border: none;
+  outline: none;
+}
+
+.search-wrapper .search-btn {
+  width: 78px;
+  height: 28px;
+  background: #00a2e9;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-wrapper .search-btn::after {
+  content: "搜索";
+}
+
+.search-wrapper .search-btn img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.shadow-box {
+  width: 100%;
+  height: 395px;
+  padding: 32px 30px;
+  box-shadow: 0 6px 15px 0 rgba(52, 168, 220, 0.3);
+  margin-bottom: 45px;
+}
+
+.shadow-box img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  margin-bottom: 36px;
+}
+
+.shadow-box .honor-name {
+  line-height: 24px;
+  height: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 6 */
+.contact-info {
+  padding-left: 26px;
+  font-size: 16px;
+  line-height: 34px;
+  border-left: 3px solid #a1a1a1;
+  margin-bottom: 44px;
+}
+
+.contact-info .contact-title {
+  color: #006db8;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background: #b9b9b9;
+  margin-bottom: 24px;
+}
+
+.map-wrapper {
+
+}
+
+.map-wrapper .map-wrapper-title {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.map-wrapper .map-wrapper-title .map-icon {
+  width: 19px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.map-wrapper .map-content img {
+  width: 100%;
+}
+
+/* 7 */
+.shadow-card {
+  width: 100%;
+  box-shadow: 0 6px 15px 0 rgba(59, 59, 59, 0.21);
+  margin-bottom: 46px;
+}
+
+.shadow-card .card-image, .shadow-card img {
+  width: 100%;
+}
+
+.shadow-card .card-content {
+  padding: 30px;
+}
+
+.shadow-card .card-content .info-name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 25px;
+  color: #15499a;
+}
+
+.shadow-card .card-content .info-desc {
+  height: 52px;
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.shadow-card .card-content .learn-more {
+  line-height: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.learn-more-box {
+  width: 100%;
+  height: 488px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn-more-box .learn-more-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #15499a;
+  margin-bottom: 26px;
+  letter-spacing: 2px;
+}
+
+.learn-more-box .contact-us-btn {
+  width: 98px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 13px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: #00a2e9;
+  cursor: pointer;
+}
+
+.learn-more-box .contact-us-btn:hover {
+  text-decoration: none;
+}
+
+/* 8 */
+.channel-header {
+  color: #16499b;
+  margin: 20px 0 30px;
+  padding: 10px 0;
+  border-bottom: 2px solid #00a3e9;
+  font-size: 20px;
+}
+
+.essay-list {
+  
+}
+
+.essay-list .essay-item {
+  border-bottom: 1px solid #A1A2A2;
+  margin-bottom: 10px;
+}
+
+.essay-list .essay-item .essay-title {
+  color: #332d2b;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.essay-list .essay-item .essay-desc {
+  color: #332D2B;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.essay-list .essay-item .essay-time {
+  color: #332D2B;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* 8 */
+
+.banner-holder {
+  background-image: url(../images/8/banner08.png);
+  background-size: cover;
+  padding: 60px 0 46px;
+}
+
+.banner-holder .banner-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.banner-holder .swiper-holder {
+  /* float: left; */
+  /* width: 560px; */
+  position: relative;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner-holder .swiper-holder .swiper-pagination {
+  right: 0;
+  left: auto;
+  width: 120px;
+}
+
+.banner-holder .swiper-holder .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 16px;
+  height: 4px;
+  background: #FFFFFF;
+}
+
+.banner-holder .slide-image {
+  max-height: 320px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.banner-holder .slide-image img {
+  object-fit: cover;
+}
+
+.banner-holder .slide-name {
+  padding: 0 120px 0 13px;
+  height: 38px;
+  line-height: 38px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.channel-info {
+  /* float: right; */
+  /* width: 440px; */
+  border-top: 4px solid #007bc2;
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.channel-info .channel-info-name {
+  font-size: 32px;
+  color: #FFFFFF;
+  height: 56px;
+  line-height: 56px;
+  margin-bottom: 10px;
+}
+
+.channel-info .channel-info-tips {
+  height: 44px;
+  line-height: 22px;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.channel-info .wechat-logo {
+  width: 52px;
+  height: 52px;
+  padding: 0 2px;
+  margin-bottom: 40px;
+  background: #72bb38;
+}
+
+.channel-info .wechat-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.channel-info .e-and-t {
+  background: #007dc3;
+  color: #FFFFFF;
+  padding: 0 11px;
+  height: 52px;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+.channel-info .e-and-t p {
+  margin: 0;
+}
+
+/* 9 */
+.publish-time {
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+.daodu-box {
+  position: relative;
+  border: 2px solid #e62129;
+  padding: 30px 20px;
+  text-indent: 32px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.daodu-box::before {
+  content: "核心导读";
+  position: absolute;
+  left: 50%;
+  top: -14px;
+  width: 132px;
+  height: 28px;
+  background-image: url(../images/9/daodu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #FFFFFF;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  text-align: center;
+  text-indent: 0
+}
+
+.model-title {
+  line-height: 40px;
+  height: 40px;
+  background-image: url(../images/9/title-bg.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: 100% 100%;
+  background-position: center;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0 40px;
+}

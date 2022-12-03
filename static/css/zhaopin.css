@@ -1,0 +1,51 @@
+.job-item {
+  display: flex;
+}
+
+.job-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.job-info {
+  padding: 20px 0 40px;
+  margin-left: 30px;
+}
+
+.job-name {
+  display: inline-block;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.job-address {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.job-desc {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+
+@media screen and (max-width: 736px) {
+
+  .job-info {
+    padding: 10px 0 20px;
+    margin-left: 10px;
+  }
+
+  .job-name {
+    font-size: 20px;
+  }
+
+  .job-img img {
+    height: auto;
+  }
+  .job-list {
+    padding: 15px;
+  }
+}
